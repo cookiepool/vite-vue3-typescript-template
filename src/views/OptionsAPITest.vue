@@ -5,10 +5,13 @@
 
 <script lang="ts">
 export default {
-  data() {
+  data(): Record<string, unknown> {
     return {
       name: 'lala'
     };
+  },
+  mounted(): void {
+    alert('mounted');
   }
 };
 </script>
