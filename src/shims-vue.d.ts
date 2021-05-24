@@ -5,9 +5,10 @@
  * 可以把这一段删除，会发现 import 的所有 vue 类型的文件都会报错。
  ***/
 
-// declare声明宣告， 声明一个ambient module(即:没有内部实现的 module声明) 
-declare module '*.vue' { 
-  import { DefineComponent } from 'vue'
-  const component: DefineComponent<{}, {}, any>
-  export default component
+// declare声明宣告， 声明一个ambient module(即:没有内部实现的 module声明)
+declare module '*.vue' {
+  import { DefineComponent } from 'vue';
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  const component: DefineComponent<{}, {}, unknown>;
+  export default component;
 }
