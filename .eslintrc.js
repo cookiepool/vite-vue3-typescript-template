@@ -16,7 +16,7 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
-    // 'prettier/@typescript-eslint', // 这个配置已经从eslint-config-prettier 8.x中移除，这儿不在配置这个
+    // 'prettier/@typescript-eslint', // 这个配置已经从eslint-config-prettier 8.x中移除，这儿不在配置这个，参考：https://stackoverflow.com/questions/65675771/eslint-couldnt-find-the-config-prettier-typescript-eslint-after-relocating
     'plugin:prettier/recommended'
   ],
   rules: {
