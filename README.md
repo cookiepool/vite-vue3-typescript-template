@@ -88,6 +88,7 @@ Vite + Vue@3全家桶 + Element-Plus + Sass + ESLint With Prettier + lint-staged
   - [husky](https://github.com/typicode/husky/)
   
   > 注意：husky 6 + lint-staged 11的使用方式跟前面的版本不再一样，老的配置方式不再适用，建议使用lint-staged的官方命令来自动安装相关配置
+  > 本模板已替换为husky 4 + lint-staged 9
   > 执行命令` npx mrm@2 lint-staged `，执行这个命令前请保证已配置了正确的ESLint。
 
 ---
